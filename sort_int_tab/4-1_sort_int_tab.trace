@@ -1,0 +1,53 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e1r8p9.42.fr
+Darwin 15.5.0 x86_64
+$> date
+Sat Jul 16 06:26:34 CEST 2016
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/usr/include/c++/4.2.1
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 7.3.0 (clang-703.0.31)
+Target: x86_64-apple-darwin15.5.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: auto-exam/2016/c-exam-beginner/practice-exam_20160716/emsimang
+
+= Git history ==================================================================
+$> git -C /var/folders/1_/292cjswn3bnb7m_3wg4dcqc00000gq/T/tmpxSgGQY/user log --pretty='%H - %an, %ad : %s'
+7934a8689b1893db027faa92cf9c1195191e6683 - Excellent MSIMANGO, Sat Jul 16 06:25:07 2016 +0200 : [zem:wtc]
+4b48d9b6f10a10b7dd047b983bf93811b1987d22 - Excellent MSIMANGO, Sat Jul 16 04:39:06 2016 +0200 : zem
+ 
+= Collected files ==========================================
+$> ls -lAR /var/folders/1_/292cjswn3bnb7m_3wg4dcqc00000gq/T/tmpxSgGQY/user
+total 8
+-rw-r--r--  1 deepthought  deepthought  516 Jul 16 06:26 __GIT_HISTORY
+drwxr-xr-x  3 deepthought  deepthought  102 Jul 16 06:26 paramsum
+drwxr-xr-x  3 deepthought  deepthought  102 Jul 16 06:26 sort_int_tab
+
+/var/folders/1_/292cjswn3bnb7m_3wg4dcqc00000gq/T/tmpxSgGQY/user/paramsum:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1329 Jul 16 06:26 paramsum.c
+
+/var/folders/1_/292cjswn3bnb7m_3wg4dcqc00000gq/T/tmpxSgGQY/user/sort_int_tab:
+total 8
+-rw-r--r--  1 deepthought  deepthought  1159 Jul 16 06:26 sort_int_tab.c
+ 
+= sort_int_tab =================================================================
+$> clang -Wextra -Wall -Werror main.c sort_int_tab.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./njplcghw4kssu1pjlpr1ce2u
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================
